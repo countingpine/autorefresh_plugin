@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Basic Auto Refresh Extension",
+  "version": "1.0",
+  "description": "A simple extension that refreshes matching URLs after a random interval from 1..5mins.",
+  "content_scripts": [
+    {
+      "matches": ["Your URLs here!"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
